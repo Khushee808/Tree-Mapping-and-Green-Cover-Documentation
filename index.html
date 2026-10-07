@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenMap | Tree Mapping & Green Cover</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <nav>
+    <div class="logo">🌳 GreenMap</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#map">Tree Map</a>
+      <a href="#add">Add Tree</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+  <div class="hero-content" id="home">
+    <div>
+      <span class="tag">TREE MAPPING & GREEN COVER DOCUMENTATION</span>
+      <h1>Know Your Trees.<br><span>Protect Your Green Spaces.</span></h1>
+      <p>Digitally document tree species, locations and green spaces in a campus, housing society or neighbourhood to support conservation.</p>
+      <a class="btn" href="#map">Explore Tree Map</a>
+    </div>
+    <div class="hero-tree">🌳</div>
+  </div>
+</header>
+
+<main>
+<section class="stats">
+  <div class="stat"><b id="treeCount">0</b><span>Trees Mapped</span></div>
+  <div class="stat"><b id="speciesCount">0</b><span>Species</span></div>
+  <div class="stat"><b id="greenCount">0</b><span>Green Spaces</span></div>
+  <div class="stat"><b id="nativeCount">0</b><span>Native Trees</span></div>
+</section>
+
+<section class="section" id="map">
+  <div class="section-title">
+    <span>01 — DIGITAL TREE MAP</span>
+    <h2>Explore Our Green Cover</h2>
+    <p>Click a tree marker to view its details.</p>
+  </div>
+  <div class="map-layout">
+    <div class="campus-map" id="campusMap">
+      <div class="road r1"></div><div class="road r2"></div>
+      <div class="building b1">Library</div>
+      <div class="building b2">Main Block</div>
+      <div class="building b3">Garden</div>
+    </div>
+    <div class="tree-list">
+      <h3>Mapped Trees</h3>
+      <div id="treeList"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="add">
+  <div class="section-title">
+    <span>02 — DIGITAL DOCUMENTATION</span>
+    <h2>Add a Tree Record</h2>
+    <p>Record basic information about trees in your surroundings.</p>
+  </div>
+  <form id="treeForm" class="form-card">
+    <div class="grid">
+      <label>Tree / Common Name<input id="name" required placeholder="e.g. Neem"></label>
+      <label>Scientific Name<input id="scientific" placeholder="e.g. Azadirachta indica"></label>
+      <label>Location<input id="location" required placeholder="e.g. Near Library"></label>
+      <label>Species Type
+        <select id="type">
+          <option value="Native">Native</option>
+          <option value="Non-native">Non-native</option>
+        </select>
+      </label>
+      <label>Green Space<input id="space" required placeholder="e.g. Campus Garden"></label>
+      <label>Approx. Height (m)<input id="height" type="number" min="0" step="0.1" placeholder="5"></label>
+    </div>
+    <button class="btn" type="submit">+ Add Tree</button>
+  </form>
+</section>
+
+<section class="section" id="about">
+  <div class="about-grid">
+    <div>
+      <span>03 — CONSERVATION</span>
+      <h2>Why Tree Mapping?</h2>
+      <p>Tree mapping creates a simple digital record of local biodiversity. It helps communities understand green cover, identify important trees and plan conservation activities.</p>
+    </div>
+    <div class="benefits">
+      <div>📍 <b>Location Tracking</b><small>Record where each tree is found.</small></div>
+      <div>🌿 <b>Species Documentation</b><small>Build a local tree species database.</small></div>
+      <div>📊 <b>Green Cover Insights</b><small>View simple statistics and trends.</small></div>
+      <div>♻️ <b>Conservation Support</b><small>Use data to plan green initiatives.</small></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 GreenMap — Tree Mapping & Green Cover Documentation</footer>
+<script src="script.js"></script>
+</body>
+</html>
